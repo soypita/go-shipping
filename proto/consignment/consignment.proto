@@ -4,9 +4,10 @@ package consignment;
 
 service ShippingService {
     rpc CreateConsignment(Consignment) returns (Response) {}
+    rpc GetConsignments(GetRequest) returns (Response) {}
 }
 
-message Consignment {
+  message Consignment {
     string id = 1;
     string description = 2;
     int32 weight = 3;
@@ -21,7 +22,10 @@ message Consignment {
     string user_id = 4;
   }
   
+  message GetRequest {}
+
   message Response {
     bool created = 1;
     Consignment consignment = 2;
+    repeated Consignment consignments = 3;
   }

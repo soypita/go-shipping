@@ -5,5 +5,6 @@ go 1.14
 require (
 	github.com/golang/protobuf v1.4.0
 	github.com/micro/go-micro v1.18.0
-	golang.org/x/net v0.0.0-20191109021931-daa7c04131f5
+	github.com/soypita/shippy-service-vessel v0.0.0-20200429203926-135f6c2f50de // indirect
+	golang.org/x/net v0.0.0-20200425230154-ff2c4b7c35a0
 )
